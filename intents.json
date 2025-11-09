@@ -1,0 +1,59 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I do for you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "quit"],
+      "responses": ["Goodbye! Have a great day!", "Bye! Come back soon."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it"],
+      "responses": ["You're welcome!", "Glad to help!", "Anytime!"]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["track order", "order status", "where is my order", "track my order", "order details"],
+      "responses": [
+        "Sure! Could you please provide your order ID?",
+        "I'd be happy to check that. What’s your order number?"
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": ["refund", "return order", "money back", "cancel my order"],
+      "responses": [
+        "I can help you with that! Please provide your order ID to initiate a refund.",
+        "No problem! Please share your order number so I can process your return."
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": ["delivery time", "shipping", "when will my order arrive", "expected delivery"],
+      "responses": [
+        "Most orders are delivered within 3–5 business days.",
+        "Your order will be shipped soon! You can check the tracking details in your account."
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": ["customer support", "contact help", "talk to agent", "help me"],
+      "responses": [
+        "You can reach our support team at support@example.com.",
+        "I can connect you to our live support team. Would you like that?"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [],
+      "responses": [
+        "I'm sorry, I didn’t understand that. Could you rephrase?",
+        "Hmm... I’m not sure about that, but I can help you with order or refund queries!"
+      ]
+    }
+  ]
+}
